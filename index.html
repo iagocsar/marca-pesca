@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERIVA NATIVA - Brand Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <span class="nav-logo-deriva">DERIVA</span>
+            <span class="nav-logo-nativa">NATIVA</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#cores">Cores</a></li>
+            <li><a href="#tipografia">Tipografia</a></li>
+            <li><a href="#logo-variations">Logo</a></li>
+            <li><a href="#embalagem">Embalagem</a></li>
+            <li><a href="#elementos">Elementos</a></li>
+            <li><a href="#aplicacoes">Aplicacoes</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">PRO SERIES</div>
+            <div class="hero-logo">
+                <h1 class="hero-title hero-title--inline">
+                    <span class="hero-title-main">DERIVA</span>
+                    <span class="hero-title-sub">NATIVA</span>
+                </h1>
+            </div>
+            <p class="hero-tagline">Iscas Artificiais Premium</p>
+            <p class="hero-sub">Designed in Brazil</p>
+            <div class="hero-specs">
+                <div class="hero-spec">
+                    <span class="hero-spec-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </span>
+                    <span>Performance</span>
+                </div>
+                <div class="hero-spec">
+                    <span class="hero-spec-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26z"/></svg>
+                    </span>
+                    <span>Premium</span>
+                </div>
+                <div class="hero-spec">
+                    <span class="hero-spec-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2"><path d="M3.5 18.5L9.5 12.5 13.5 16.5 22 6"/><path d="M17 6h5v5"/></svg>
+                    </span>
+                    <span>Pro Series</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ==================== PALETA DE CORES ==================== -->
+    <section class="section" id="cores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">01</span>
+                <h2 class="section-title">Paleta de Cores</h2>
+                <p class="section-subtitle">Clique em qualquer cor para copiar o codigo HEX</p>
+            </div>
+
+            <div class="colors-grid">
+                <div class="color-card color-card--large" data-hex="#0A0A0A" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#0A0A0A; border: 1px solid #333;"></div>
+                    <div class="color-info">
+                        <h3>Preto Profundo</h3>
+                        <span class="color-hex">#0A0A0A</span>
+                        <span class="color-role">Fundo Principal</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card color-card--large" data-hex="#1A1A1A" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#1A1A1A; border: 1px solid #333;"></div>
+                    <div class="color-info">
+                        <h3>Grafite</h3>
+                        <span class="color-hex">#1A1A1A</span>
+                        <span class="color-role">Fundo Secundario</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card color-card--primary" data-hex="#FF6B00" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#FF6B00;"></div>
+                    <div class="color-info">
+                        <h3>Laranja Fogo</h3>
+                        <span class="color-hex">#FF6B00</span>
+                        <span class="color-role">Destaque Principal</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card" data-hex="#FF8C33" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#FF8C33;"></div>
+                    <div class="color-info">
+                        <h3>Laranja Vivo</h3>
+                        <span class="color-hex">#FF8C33</span>
+                        <span class="color-role">Hover / Gradiente</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card color-card--accent" data-hex="#39FF14" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#39FF14;"></div>
+                    <div class="color-info">
+                        <h3>Verde Neon Brasil</h3>
+                        <span class="color-hex">#39FF14</span>
+                        <span class="color-role">Detalhes / Accent</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card" data-hex="#32CD32" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#32CD32;"></div>
+                    <div class="color-info">
+                        <h3>Verde Neon Suave</h3>
+                        <span class="color-hex">#32CD32</span>
+                        <span class="color-role">Gradientes / Icones</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card" data-hex="#FFFFFF" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#FFFFFF;"></div>
+                    <div class="color-info">
+                        <h3>Branco Puro</h3>
+                        <span class="color-hex">#FFFFFF</span>
+                        <span class="color-role">Texto Principal</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card" data-hex="#B0B0B0" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#B0B0B0;"></div>
+                    <div class="color-info">
+                        <h3>Cinza Claro</h3>
+                        <span class="color-hex">#B0B0B0</span>
+                        <span class="color-role">Subtitulos</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+
+                <div class="color-card" data-hex="#6B6B6B" onclick="copyHex(this)">
+                    <div class="color-swatch" style="background:#6B6B6B;"></div>
+                    <div class="color-info">
+                        <h3>Cinza Medio</h3>
+                        <span class="color-hex">#6B6B6B</span>
+                        <span class="color-role">Labels / Notas</span>
+                    </div>
+                    <span class="color-copy-feedback">Copiado!</span>
+                </div>
+            </div>
+
+            <!-- Color proportion bar -->
+            <div class="color-proportion">
+                <h3 class="proportion-title">Proporcao de Uso</h3>
+                <div class="proportion-bar">
+                    <div class="proportion-segment" style="width:60%; background:#0A0A0A; border:1px solid #333;" data-label="Preto 60%"></div>
+                    <div class="proportion-segment" style="width:25%; background:#FF6B00;" data-label="Laranja 25%"></div>
+                    <div class="proportion-segment" style="width:10%; background:#39FF14;" data-label="Verde 10%"></div>
+                    <div class="proportion-segment" style="width:5%; background:#FFFFFF;" data-label="Branco 5%"></div>
+                </div>
+                <div class="proportion-labels">
+                    <span>Preto 60%</span>
+                    <span>Laranja 25%</span>
+                    <span>Verde 10%</span>
+                    <span>Branco 5%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TIPOGRAFIA ==================== -->
+    <section class="section section--alt" id="tipografia">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">02</span>
+                <h2 class="section-title">Tipografia</h2>
+                <p class="section-subtitle">Sistema tipografico esportivo e premium</p>
+            </div>
+
+            <div class="type-grid">
+                <!-- Orbitron -->
+                <div class="type-card">
+                    <div class="type-card-header">
+                        <span class="type-badge type-badge--primary">LOGO / DISPLAY</span>
+                        <span class="type-name">Orbitron</span>
+                    </div>
+                    <div class="type-showcase" style="font-family:'Orbitron',sans-serif;">
+                        <div class="type-sample type-sample--xl" style="font-weight:900;">DERIVA NATIVA</div>
+                        <div class="type-sample type-sample--lg" style="font-weight:700;">DERIVA NATIVA</div>
+                        <div class="type-sample type-sample--md" style="font-weight:600;">Pro Series Lures</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">abcdefghijklmnopqrstuvwxyz</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">0123456789 !@#$%&*</div>
+                    </div>
+                    <div class="type-weights">
+                        <span style="font-family:'Orbitron'; font-weight:400;">Regular 400</span>
+                        <span style="font-family:'Orbitron'; font-weight:600;">SemiBold 600</span>
+                        <span style="font-family:'Orbitron'; font-weight:700;">Bold 700</span>
+                        <span style="font-family:'Orbitron'; font-weight:900;">Black 900</span>
+                    </div>
+                </div>
+
+                <!-- Rajdhani -->
+                <div class="type-card">
+                    <div class="type-card-header">
+                        <span class="type-badge type-badge--secondary">TITULOS</span>
+                        <span class="type-name">Rajdhani</span>
+                    </div>
+                    <div class="type-showcase" style="font-family:'Rajdhani',sans-serif;">
+                        <div class="type-sample type-sample--xl" style="font-weight:700;">Iscas Artificiais</div>
+                        <div class="type-sample type-sample--lg" style="font-weight:600;">Premium Quality</div>
+                        <div class="type-sample type-sample--md" style="font-weight:500;">Designed in Brazil</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">abcdefghijklmnopqrstuvwxyz</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">0123456789 !@#$%&*</div>
+                    </div>
+                    <div class="type-weights">
+                        <span style="font-family:'Rajdhani'; font-weight:400;">Regular 400</span>
+                        <span style="font-family:'Rajdhani'; font-weight:500;">Medium 500</span>
+                        <span style="font-family:'Rajdhani'; font-weight:600;">SemiBold 600</span>
+                        <span style="font-family:'Rajdhani'; font-weight:700;">Bold 700</span>
+                    </div>
+                </div>
+
+                <!-- Exo 2 -->
+                <div class="type-card">
+                    <div class="type-card-header">
+                        <span class="type-badge type-badge--accent">CORPO</span>
+                        <span class="type-name">Exo 2</span>
+                    </div>
+                    <div class="type-showcase" style="font-family:'Exo 2',sans-serif;">
+                        <div class="type-sample type-sample--body" style="font-weight:400;">Iscas artificiais de alta performance para pescadores exigentes. Tecnologia japonesa com alma brasileira. Cada isca e projetada para oferecer a melhor acao na agua, atraindo os maiores trofeus.</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:300;">Light 300 - Labels e notas tecnicas</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:400;">Regular 400 - Texto de corpo principal</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:500;">Medium 500 - Destaques no corpo</div>
+                        <div class="type-sample type-sample--sm" style="font-weight:700;">Bold 700 - Enfase forte</div>
+                    </div>
+                    <div class="type-weights">
+                        <span style="font-family:'Exo 2'; font-weight:300;">Light 300</span>
+                        <span style="font-family:'Exo 2'; font-weight:400;">Regular 400</span>
+                        <span style="font-family:'Exo 2'; font-weight:500;">Medium 500</span>
+                        <span style="font-family:'Exo 2'; font-weight:700;">Bold 700</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Type Hierarchy -->
+            <div class="type-hierarchy">
+                <h3 class="proportion-title">Hierarquia Tipografica</h3>
+                <div class="hierarchy-list">
+                    <div class="hierarchy-item">
+                        <span class="hierarchy-label">H1</span>
+                        <span class="hierarchy-demo" style="font-family:'Orbitron'; font-weight:700; font-size:48px; color:#FF6B00;">DERIVA NATIVA</span>
+                        <span class="hierarchy-spec">Orbitron Bold 48px</span>
+                    </div>
+                    <div class="hierarchy-item">
+                        <span class="hierarchy-label">H2</span>
+                        <span class="hierarchy-demo" style="font-family:'Rajdhani'; font-weight:600; font-size:36px; color:#FFFFFF;">Iscas Artificiais</span>
+                        <span class="hierarchy-spec">Rajdhani SemiBold 36px</span>
+                    </div>
+                    <div class="hierarchy-item">
+                        <span class="hierarchy-label">H3</span>
+                        <span class="hierarchy-demo" style="font-family:'Rajdhani'; font-weight:500; font-size:24px; color:#B0B0B0;">Pro Series Collection</span>
+                        <span class="hierarchy-spec">Rajdhani Medium 24px</span>
+                    </div>
+                    <div class="hierarchy-item">
+                        <span class="hierarchy-label">Body</span>
+                        <span class="hierarchy-demo" style="font-family:'Exo 2'; font-weight:400; font-size:16px; color:#FFFFFF;">Texto de corpo com informacoes do produto</span>
+                        <span class="hierarchy-spec">Exo 2 Regular 16px</span>
+                    </div>
+                    <div class="hierarchy-item">
+                        <span class="hierarchy-label">Caption</span>
+                        <span class="hierarchy-demo" style="font-family:'Exo 2'; font-weight:300; font-size:14px; color:#6B6B6B;">Especificacoes tecnicas e notas</span>
+                        <span class="hierarchy-spec">Exo 2 Light 14px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LOGO VARIATIONS ==================== -->
+    <section class="section" id="logo-variations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">03</span>
+                <h2 class="section-title">Variacoes do Logo</h2>
+                <p class="section-subtitle">Aplicacoes em diferentes fundos e contextos</p>
+            </div>
+
+            <!-- PRINCIPAL - Horizontal inline (aprovado) -->
+            <div class="logo-principal">
+                <h3 class="logo-section-label">PRINCIPAL (Aprovado)</h3>
+                <div class="logo-principal-grid">
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FF6B00;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#FFFFFF;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Principal - Fundo Escuro</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#F5F5F5;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FF6B00;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#0A0A0A;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Principal - Fundo Claro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VARIACOES DE COR - Horizontal inline -->
+            <div class="logo-variants-section">
+                <h3 class="logo-section-label">VARIACOES DE COR</h3>
+                <div class="logo-grid">
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FFFFFF;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#FFFFFF; opacity:0.7;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Monocromatico Branco</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#F5F5F5;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#0A0A0A;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#0A0A0A; opacity:0.7;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Monocromatico Escuro</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#39FF14;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#FFFFFF;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Verde Neon</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FF6B00;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#39FF14;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Laranja + Verde</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg logo-variant-bg--watermark" style="background:linear-gradient(135deg, #1a1a2e, #16213e);">
+                            <div class="logo-inline" style="opacity:0.15;">
+                                <span class="logo-inline-d" style="color:#FFFFFF;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#FFFFFF;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Marca D'Agua</span>
+                    </div>
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background: linear-gradient(135deg, #FF6B00, #FF8C33);">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FFFFFF;">DERIVA</span>
+                                <span class="logo-inline-n" style="color:#0A0A0A;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">Fundo Laranja</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALTERNATIVAS DE LAYOUT -->
+            <div class="logo-variants-section">
+                <h3 class="logo-section-label">ALTERNATIVAS DE LAYOUT</h3>
+                <div class="logo-grid">
+                    <!-- Stacked -->
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-stacked">
+                                <span class="logo-stacked-d">DERIVA</span>
+                                <span class="logo-stacked-n">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">A - Empilhado</span>
+                    </div>
+                    <!-- Stacked with line -->
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-stacked">
+                                <span class="logo-stacked-d">DERIVA</span>
+                                <div class="logo-divider"></div>
+                                <span class="logo-stacked-n">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">B - Empilhado + Linha</span>
+                    </div>
+                    <!-- Inline with green divider -->
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline">
+                                <span class="logo-inline-d" style="color:#FF6B00;">DERIVA</span>
+                                <span class="logo-inline-sep"></span>
+                                <span class="logo-inline-n" style="color:#FFFFFF;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">D - Inline + Separador</span>
+                    </div>
+                    <!-- Compact badge style -->
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-badge-style">
+                                <div class="logo-badge-border">
+                                    <span class="logo-badge-d">DERIVA</span>
+                                    <span class="logo-badge-n">NATIVA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">E - Badge / Selo</span>
+                    </div>
+                    <!-- Condensed -->
+                    <div class="logo-variant">
+                        <div class="logo-variant-bg" style="background:#0A0A0A;">
+                            <div class="logo-inline logo-inline--condensed">
+                                <span class="logo-inline-d" style="color:#FF6B00;">DERIVA</span><span class="logo-inline-n" style="color:#FFFFFF;">NATIVA</span>
+                            </div>
+                        </div>
+                        <span class="logo-variant-label">F - Ultra Junto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MOCKUP EMBALAGEM - GERADOR ==================== -->
+    <section class="section section--alt" id="embalagem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">04</span>
+                <h2 class="section-title">Mockup Embalagem</h2>
+                <p class="section-subtitle">Configure os dados da isca e arraste para rotacionar em 3D</p>
+            </div>
+
+            <div class="v3-layout">
+                <!-- Painel de inputs -->
+                <div class="v3-panel">
+                    <div class="v3-panel-title">Dados da Isca</div>
+                    <div class="v3-input-group">
+                        <label class="v3-label">Nome do Modelo</label>
+                        <input type="text" class="v3-input" id="v3Model" value="PHANTOM" placeholder="Ex: PHANTOM" maxlength="12">
+                    </div>
+                    <div class="v3-input-group">
+                        <label class="v3-label">Tipo / Categoria</label>
+                        <input type="text" class="v3-input" id="v3Type" value="JERKBAIT" placeholder="Ex: JERKBAIT" maxlength="15">
+                    </div>
+                    <div class="v3-input-group">
+                        <label class="v3-label">Serie</label>
+                        <input type="text" class="v3-input" id="v3Series" value="PRO SERIES" placeholder="Ex: PRO SERIES" maxlength="15">
+                    </div>
+                    <div class="v3-input-row">
+                        <div class="v3-input-group">
+                            <label class="v3-label">Tamanho (mm)</label>
+                            <input type="text" class="v3-input" id="v3Size" value="120" placeholder="120">
+                        </div>
+                        <div class="v3-input-group">
+                            <label class="v3-label">Peso (g)</label>
+                            <input type="text" class="v3-input" id="v3Weight" value="18" placeholder="18">
+                        </div>
+                    </div>
+                    <div class="v3-input-row">
+                        <div class="v3-input-group">
+                            <label class="v3-label">Profundidade (m)</label>
+                            <input type="text" class="v3-input" id="v3Depth" value="1.5-1.8" placeholder="1.5-1.8">
+                        </div>
+                        <div class="v3-input-group">
+                            <label class="v3-label">Anzois</label>
+                            <input type="text" class="v3-input" id="v3Hooks" value="#6 x3" placeholder="#6 x3">
+                        </div>
+                    </div>
+                    <div class="v3-input-group">
+                        <label class="v3-label">Acao na Agua</label>
+                        <select class="v3-input v3-select" id="v3Water">
+                            <option value="MEIA AGUA" selected>Meia Agua (Suspending)</option>
+                            <option value="SUPERFICIE">Superficie (Floating)</option>
+                            <option value="FUNDO">Fundo (Sinking)</option>
+                        </select>
+                    </div>
+                    <div class="v3-input-group">
+                        <label class="v3-label">Codigo do Modelo</label>
+                        <input type="text" class="v3-input" id="v3Code" value="120SP" placeholder="Ex: 120SP, 90F, 70S">
+                    </div>
+                </div>
+
+                <!-- Mockup 3D V3 -->
+                <div class="v3-mockup-wrapper">
+                    <div class="mockup-scene v3-scene" id="v3Scene">
+                        <div class="mockup-box v3-box" id="v3Box">
+                            <!-- Front -->
+                            <div class="box-face box-front box-front--v2 v3-front">
+                                <div class="box-v2-card">
+                                    <div class="box-v2-top">
+                                        <span class="box-v2-series" id="v3FrontSeries">PRO SERIES</span>
+                                    </div>
+                                    <div class="box-v2-brand-vertical">
+                                        <span class="box-v2-deriva">DERIVA</span>
+                                        <span class="box-v2-nativa">NATIVA</span>
+                                    </div>
+                                    <div class="box-v2-model-vertical" id="v3FrontModel">PHANTOM</div>
+                                    <div class="box-v2-type-vertical" id="v3FrontType">JERKBAIT</div>
+                                    <div class="box-v2-bottom">
+                                        <span class="box-v2-water" id="v3FrontWater">MEIA AGUA</span>
+                                        <span class="box-v2-specs-v" id="v3FrontSpecs">120mm | 18g</span>
+                                        <span class="box-v2-depth" id="v3FrontDepth">1.5-1.8m</span>
+                                    </div>
+                                </div>
+                                <div class="box-v2-pvc">
+                                    <div class="box-v2-pvc-shine"></div>
+                                    <div class="box-v2-lure">
+                                        <svg viewBox="0 0 50 180" class="lure-svg-v2">
+                                            <defs>
+                                                <linearGradient id="lureGradV3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#FF6B00"/>
+                                                    <stop offset="50%" style="stop-color:#FF8C33"/>
+                                                    <stop offset="100%" style="stop-color:#FF6B00"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <ellipse cx="25" cy="90" rx="12" ry="55" fill="url(#lureGradV3)"/>
+                                            <ellipse cx="28" cy="90" rx="8" ry="50" fill="#FFB366" opacity="0.3"/>
+                                            <path d="M25 30 L18 15 L25 20" fill="#FFFFFF" opacity="0.4"/>
+                                            <circle cx="25" cy="42" r="5" fill="#FFFFFF"/>
+                                            <circle cx="24" cy="41" r="3.5" fill="#0A0A0A"/>
+                                            <circle cx="23" cy="40" r="1.2" fill="#FFFFFF"/>
+                                            <line x1="25" y1="110" x2="35" y2="118" stroke="#999" stroke-width="1.2"/>
+                                            <path d="M32 114 Q38 118 32 122" stroke="#999" stroke-width="1.2" fill="none"/>
+                                            <line x1="25" y1="75" x2="35" y2="83" stroke="#999" stroke-width="1.2"/>
+                                            <path d="M32 79 Q38 83 32 87" stroke="#999" stroke-width="1.2" fill="none"/>
+                                            <path d="M25 148 L18 160 L25 155 L32 160 Z" fill="#FF6B00" opacity="0.6"/>
+                                            <path d="M18 65 Q25 60 32 65" stroke="#CC5500" stroke-width="0.4" fill="none" opacity="0.4"/>
+                                            <path d="M18 80 Q25 75 32 80" stroke="#CC5500" stroke-width="0.4" fill="none" opacity="0.4"/>
+                                            <path d="M18 95 Q25 90 32 95" stroke="#CC5500" stroke-width="0.4" fill="none" opacity="0.4"/>
+                                        </svg>
+                                    </div>
+                                    <div class="box-v2-japan-sticker">
+                                        <span class="box-v2-japan-text">INSPIRED BY<br><strong>JAPANESE</strong><br>DESIGN</span>
+                                    </div>
+                                    <div class="box-v2-info-card">
+                                        <span class="box-v2-info-model" id="v3FrontInfoModel">PHANTOM 120SP</span>
+                                        <div class="box-v2-info-row">
+                                            <span class="box-v2-info-category" id="v3FrontInfoCategory">JERKBAIT</span>
+                                            <span class="box-v2-info-specs" id="v3FrontInfoSpecs">120mm / 18g / 1.8m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Back -->
+                            <div class="box-face box-back v3-back">
+                                <div class="box-back-content">
+                                    <div class="box-back-logo">
+                                        <span class="box-brand-d">DERIVA</span>
+                                        <span class="box-brand-n">NATIVA</span>
+                                    </div>
+                                    <div class="box-back-model" id="v3BackModel">PHANTOM 120SP</div>
+                                    <div class="box-back-tech-title">TECNOLOGIA</div>
+                                    <div class="box-back-features">
+                                        <div class="box-feature">
+                                            <div class="box-feature-icon">
+                                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="3"/><path d="M7 14V8"/><path d="M10 8h8"/><path d="M15 5l3 3-3 3"/></svg>
+                                            </div>
+                                            <div class="box-feature-text">
+                                                <span class="box-feature-name">Transferencia de Peso</span>
+                                                <span class="box-feature-desc">Arremessos longos e precisos</span>
+                                            </div>
+                                        </div>
+                                        <div class="box-feature">
+                                            <div class="box-feature-icon">
+                                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"><path d="M2 6c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/><line x1="5" y1="12" x2="19" y2="12"/><path d="M2 18c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/></svg>
+                                            </div>
+                                            <div class="box-feature-text">
+                                                <span class="box-feature-name">Suspending</span>
+                                                <span class="box-feature-desc">Pausa na meia agua</span>
+                                            </div>
+                                        </div>
+                                        <div class="box-feature">
+                                            <div class="box-feature-icon">
+                                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 12 22 2 8.5"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="12" y1="2" x2="8" y2="8.5"/><line x1="12" y1="2" x2="16" y2="8.5"/><line x1="8" y1="8.5" x2="12" y2="22"/><line x1="16" y1="8.5" x2="12" y2="22"/></svg>
+                                            </div>
+                                            <div class="box-feature-text">
+                                                <span class="box-feature-name">Pintura 3D Holografica</span>
+                                                <span class="box-feature-desc">Reflexo realista na agua</span>
+                                            </div>
+                                        </div>
+                                        <div class="box-feature">
+                                            <div class="box-feature-icon">
+                                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><circle cx="12" cy="4" r="2"/><path d="M12 6v4c0 4-7 6-7 10a7 7 0 0 0 7 7"/><path d="M12 23l-2-3"/></svg>
+                                            </div>
+                                            <div class="box-feature-text">
+                                                <span class="box-feature-name">Anzois anti Ferrugem</span>
+                                                <span class="box-feature-desc">Revestido com teflon de alta qualidade</span>
+                                            </div>
+                                        </div>
+                                        <div class="box-feature">
+                                            <div class="box-feature-icon">
+                                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-6 4 6 4-6 4 6 4-6"/><path d="M20 18l-2-1.5L16 18l-2-1.5L12 18l-2-1.5L8 18l-2-1.5L4 18"/></svg>
+                                            </div>
+                                            <div class="box-feature-text">
+                                                <span class="box-feature-name">Natacao Errante</span>
+                                                <span class="box-feature-desc">Movimento imprevisivel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-back-specs-table">
+                                        <div class="spec-row"><span>Tamanho</span><span id="v3BackSize">120mm</span></div>
+                                        <div class="spec-row"><span>Peso</span><span id="v3BackWeight">18g</span></div>
+                                        <div class="spec-row"><span>Profundidade</span><span id="v3BackDepth">1.5-1.8m</span></div>
+                                        <div class="spec-row"><span>Acao</span><span id="v3BackWater">Meia Agua</span></div>
+                                        <div class="spec-row"><span>Anzois</span><span id="v3BackHooks">#6 x3</span></div>
+                                    </div>
+                                    <div class="box-back-footer">
+                                        <div class="box-back-badge">
+                                            <div class="box-back-badge-inner">
+                                                <div class="box-back-badge-flags">
+                                                    <span>&#127463;&#127479;</span>
+                                                    <span>&#127471;&#127477;</span>
+                                                </div>
+                                                <div class="box-back-badge-text">
+                                                    <span class="box-back-badge-sm">INSPIRED BY</span>
+                                                    <span class="box-back-badge-lg">JAPANESE</span>
+                                                    <span class="box-back-badge-lg">DESIGN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-back-social-row">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#FF6B00" stroke="none"/></svg>
+                                            <span class="box-back-social-text">@derivanativa</span>
+                                            <span class="box-back-social-sep">|</span>
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                            <span class="box-back-site-text">derivanativa.com.br</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left -->
+                            <div class="box-face box-left v3-left">
+                                <div class="box-side-v2">
+                                    <div class="box-side-badge-vertical">
+                                        <span class="box-side-badge-d">DERIVA</span>
+                                        <span class="box-side-badge-n">NATIVA</span>
+                                    </div>
+                                    <div class="box-side-v2-line"></div>
+                                    <span class="box-side-v2-spec" id="v3LeftSize">120mm</span>
+                                    <span class="box-side-v2-spec" id="v3LeftWeight">18g</span>
+                                    <div class="box-side-v2-line"></div>
+                                    <span class="box-side-v2-depth" id="v3LeftDepth">1.8m</span>
+                                </div>
+                            </div>
+
+                            <!-- Right -->
+                            <div class="box-face box-right v3-right">
+                                <div class="box-side-v2">
+                                    <span class="box-side-v2-model" id="v3RightModel">PHANTOM</span>
+                                    <span class="box-side-v2-type" id="v3RightType">JERKBAIT</span>
+                                    <div class="box-side-v2-line"></div>
+                                    <span class="box-side-v2-spec" id="v3RightSize">120mm</span>
+                                    <span class="box-side-v2-spec" id="v3RightWeight">18g</span>
+                                    <div class="box-side-v2-line"></div>
+                                    <span class="box-side-v2-water" id="v3RightWater">MEIA AGUA</span>
+                                </div>
+                            </div>
+
+                            <!-- Top -->
+                            <div class="box-face box-top v3-top">
+                                <div class="box-topbottom-v2">
+                                    <span class="box-topbottom-d">DERIVA</span>
+                                    <span class="box-topbottom-n">NATIVA</span>
+                                </div>
+                            </div>
+
+                            <!-- Bottom -->
+                            <div class="box-face box-bottom v3-bottom">
+                                <div class="box-topbottom-v2">
+                                    <span class="box-topbottom-d">DERIVA</span>
+                                    <span class="box-topbottom-n">NATIVA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mockup-controls">
+                        <button class="mockup-btn" onclick="resetMockup()">Reset</button>
+                        <button class="mockup-btn" onclick="autoRotate()">Auto Rotacao</button>
+                        <button class="mockup-btn" onclick="showFront()">Frente</button>
+                        <button class="mockup-btn" onclick="showBack()">Costas</button>
+                        <button class="mockup-btn" onclick="showSide()">Lateral</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ELEMENTOS DA MARCA ==================== -->
+    <section class="section" id="elementos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">05</span>
+                <h2 class="section-title">Elementos da Marca</h2>
+                <p class="section-subtitle">Badges, selos e padroes visuais</p>
+            </div>
+
+            <div class="elements-grid">
+                <!-- Pro Series Badge -->
+                <div class="element-card">
+                    <div class="element-preview">
+                        <div class="badge-pro">
+                            <span class="badge-pro-text">PRO</span>
+                            <span class="badge-pro-sub">SERIES</span>
+                        </div>
+                    </div>
+                    <span class="element-label">Badge Pro Series</span>
+                </div>
+
+                <!-- SELO - Badge retangular -->
+                <div class="element-card">
+                    <div class="element-preview">
+                        <div class="seal-option seal-option-2">
+                            <div class="seal-badge-frame">
+                                <div class="seal-badge-flags">
+                                    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(5,5)">
+                                            <path d="M0 10 Q20 5 40 8 Q60 11 80 8 Q90 6 90 10 L90 70 Q70 73 50 70 Q30 67 10 70 Q0 72 0 70 Z" fill="#009739"/>
+                                            <polygon points="45,15 78,40 45,65 12,40" fill="#FEDD00"/>
+                                            <circle cx="45" cy="40" r="12" fill="#002776"/>
+                                            <path d="M33 40 Q39 36 45 38 Q51 36 57 40" stroke="#FFF" stroke-width="1" fill="none"/>
+                                        </g>
+                                        <g transform="translate(100,8)">
+                                            <path d="M0 8 Q20 3 40 6 Q60 9 85 5 Q95 3 95 8 L95 68 Q75 72 55 68 Q35 64 15 68 Q0 70 0 68 Z" fill="#F5F5F5"/>
+                                            <circle cx="48" cy="38" r="14" fill="#BC002D"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="seal-badge-text">
+                                    <span class="seal-badge-title">INSPIRED BY</span>
+                                    <span class="seal-badge-bold">JAPANESE</span>
+                                    <span class="seal-badge-bold">DESIGN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="element-label">Selo 2 - Badge</span>
+                </div>
+
+                <!-- SELO 3 - Escudo / Shield -->
+                <div class="element-card">
+                    <div class="element-preview">
+                        <div class="seal-option seal-option-3">
+                            <div class="seal-shield">
+                                <div class="seal-shield-top">
+                                    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(5,5)">
+                                            <path d="M0 10 Q20 5 40 8 Q60 11 80 8 Q90 6 90 10 L90 70 Q70 73 50 70 Q30 67 10 70 Q0 72 0 70 Z" fill="#009739"/>
+                                            <polygon points="45,15 78,40 45,65 12,40" fill="#FEDD00"/>
+                                            <circle cx="45" cy="40" r="12" fill="#002776"/>
+                                            <path d="M33 40 Q39 36 45 38 Q51 36 57 40" stroke="#FFF" stroke-width="1" fill="none"/>
+                                        </g>
+                                        <g transform="translate(100,8)">
+                                            <path d="M0 8 Q20 3 40 6 Q60 9 85 5 Q95 3 95 8 L95 68 Q75 72 55 68 Q35 64 15 68 Q0 70 0 68 Z" fill="#F5F5F5"/>
+                                            <circle cx="48" cy="38" r="14" fill="#BC002D"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="seal-shield-bottom">
+                                    <span>INSPIRED BY</span>
+                                    <strong>JAPANESE DESIGN</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="element-label">Selo 3 - Escudo</span>
+                </div>
+
+                <!-- Weight badge -->
+                <div class="element-card">
+                    <div class="element-preview">
+                        <div class="badge-weight">
+                            <span class="badge-weight-value">18g</span>
+                            <span class="badge-weight-label">WEIGHT</span>
+                        </div>
+                    </div>
+                    <span class="element-label">Badge Peso</span>
+                </div>
+
+                <!-- Depth badge -->
+                <div class="element-card">
+                    <div class="element-preview">
+                        <div class="badge-depth">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="2">
+                                <path d="M12 2v20M5 19l7 3 7-3"/>
+                            </svg>
+                            <span class="badge-depth-value">1.8m</span>
+                            <span class="badge-depth-label">DEPTH</span>
+                        </div>
+                    </div>
+                    <span class="element-label">Badge Profundidade</span>
+                </div>
+
+                <!-- Pattern -->
+                <div class="element-card element-card--wide">
+                    <div class="element-preview element-preview--pattern">
+                        <div class="brand-pattern"></div>
+                    </div>
+                    <span class="element-label">Pattern Marca</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APLICACOES ==================== -->
+    <section class="section section--alt" id="aplicacoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">06</span>
+                <h2 class="section-title">Aplicacoes</h2>
+                <p class="section-subtitle">A marca aplicada em diferentes materiais</p>
+            </div>
+
+            <div class="apps-grid">
+                <!-- T-shirt -->
+                <div class="app-card">
+                    <div class="app-preview">
+                        <div class="app-tshirt">
+                            <svg viewBox="0 0 200 220" class="tshirt-svg">
+                                <!-- T-shirt shape -->
+                                <path d="M50 0 L0 40 L25 55 L25 220 L175 220 L175 55 L200 40 L150 0 L130 20 Q100 35 70 20 Z" fill="#1A1A1A" stroke="#333" stroke-width="1"/>
+                                <!-- Collar -->
+                                <path d="M70 20 Q100 35 130 20 Q115 30 100 32 Q85 30 70 20" fill="#0A0A0A"/>
+                                <!-- Logo on shirt -->
+                                <text x="100" y="100" text-anchor="middle" fill="#FF6B00" font-family="Orbitron" font-size="14" font-weight="700">DERIVA</text>
+                                <text x="100" y="118" text-anchor="middle" fill="#FFFFFF" font-family="Orbitron" font-size="14" font-weight="700">NATIVA</text>
+                                <line x1="65" y1="125" x2="135" y2="125" stroke="#39FF14" stroke-width="1" opacity="0.6"/>
+                                <text x="100" y="138" text-anchor="middle" fill="#B0B0B0" font-family="Exo 2" font-size="6">PRO SERIES</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="app-label">Camiseta</span>
+                </div>
+
+                <!-- Cap -->
+                <div class="app-card">
+                    <div class="app-preview">
+                        <div class="app-cap">
+                            <svg viewBox="0 0 200 160" class="cap-svg">
+                                <!-- Cap bill -->
+                                <path d="M20 90 Q100 110 180 90 Q190 95 170 100 Q100 120 30 100 Q10 95 20 90" fill="#0A0A0A"/>
+                                <!-- Cap body -->
+                                <path d="M30 90 Q30 30 100 20 Q170 30 170 90" fill="#1A1A1A" stroke="#333" stroke-width="1"/>
+                                <!-- Front panel -->
+                                <path d="M50 88 Q50 40 100 30 Q150 40 150 88" fill="#0A0A0A"/>
+                                <!-- Logo -->
+                                <text x="100" y="60" text-anchor="middle" fill="#FF6B00" font-family="Orbitron" font-size="11" font-weight="700">DERIVA</text>
+                                <text x="100" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Orbitron" font-size="11" font-weight="700">NATIVA</text>
+                                <!-- Button on top -->
+                                <circle cx="100" cy="20" r="4" fill="#FF6B00"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="app-label">Bone</span>
+                </div>
+
+                <!-- Sticker -->
+                <div class="app-card">
+                    <div class="app-preview">
+                        <div class="app-sticker">
+                            <div class="sticker">
+                                <div class="sticker-inner">
+                                    <span class="sticker-brand-d">DERIVA</span>
+                                    <span class="sticker-brand-n">NATIVA</span>
+                                    <div class="sticker-line"></div>
+                                    <span class="sticker-sub">PRO SERIES</span>
+                                    <span class="sticker-br">BRAZIL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="app-label">Adesivo</span>
+                </div>
+
+                <!-- Business card -->
+                <div class="app-card">
+                    <div class="app-preview">
+                        <div class="app-bcard">
+                            <div class="bcard">
+                                <div class="bcard-top">
+                                    <span class="bcard-brand-d">DERIVA</span>
+                                    <span class="bcard-brand-n">NATIVA</span>
+                                </div>
+                                <div class="bcard-line"></div>
+                                <div class="bcard-info">
+                                    <span class="bcard-name">Seu Nome</span>
+                                    <span class="bcard-role">Founder & CEO</span>
+                                    <span class="bcard-contact">contato@derivanativa.com.br</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="app-label">Cartao de Visita</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="footer-brand-d">DERIVA</span>
+                    <span class="footer-brand-n">NATIVA</span>
+                </div>
+                <p class="footer-text">Brand Identity Guide - 2026</p>
+                <p class="footer-text footer-text--sm">Iscas Artificiais Premium - Designed in Brazil</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
