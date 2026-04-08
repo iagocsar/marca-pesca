@@ -197,6 +197,62 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('change', updateMockupData);
     });
 
+    // ==================== V4 MOCKUP 3D ==================== //
+    var scene4 = document.getElementById('v4Scene');
+    var box4 = document.getElementById('v4Box');
+
+    if (scene4 && box4) {
+        var isDrag4 = false, sx4, sy4;
+        var rx4 = 5, ry4 = -25, auto4 = null;
+
+        function updateV4() {
+            box4.style.transform = 'translateZ(-49px) rotateY(' + ry4 + 'deg) rotateX(' + rx4 + 'deg)';
+        }
+        function stopAuto4() { if (auto4) { clearInterval(auto4); auto4 = null; } }
+
+        scene4.addEventListener('mousedown', function(e) {
+            isDrag4 = true; sx4 = e.clientX; sy4 = e.clientY;
+            stopAuto4(); box4.style.transition = 'none';
+        });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDrag4) return;
+            ry4 += (e.clientX - sx4) * 0.5;
+            rx4 -= (e.clientY - sy4) * 0.3;
+            rx4 = Math.max(-30, Math.min(30, rx4));
+            sx4 = e.clientX; sy4 = e.clientY;
+            updateV4();
+        });
+        document.addEventListener('mouseup', function() {
+            if (isDrag4) { isDrag4 = false; box4.style.transition = 'transform 0.3s ease'; }
+        });
+
+        scene4.addEventListener('touchstart', function(e) {
+            isDrag4 = true; sx4 = e.touches[0].clientX; sy4 = e.touches[0].clientY;
+            stopAuto4(); box4.style.transition = 'none';
+        }, { passive: true });
+        document.addEventListener('touchmove', function(e) {
+            if (!isDrag4) return;
+            ry4 += (e.touches[0].clientX - sx4) * 0.5;
+            rx4 -= (e.touches[0].clientY - sy4) * 0.3;
+            rx4 = Math.max(-30, Math.min(30, rx4));
+            sx4 = e.touches[0].clientX; sy4 = e.touches[0].clientY;
+            updateV4();
+        }, { passive: true });
+        document.addEventListener('touchend', function() {
+            if (isDrag4) { isDrag4 = false; box4.style.transition = 'transform 0.3s ease'; }
+        });
+
+        window.resetV4 = function() { stopAuto4(); rx4=5; ry4=-25; box4.style.transition='transform 0.6s ease'; updateV4(); };
+        window.autoRotateV4 = function() {
+            if (auto4) { stopAuto4(); return; }
+            box4.style.transition = 'none';
+            auto4 = setInterval(function() { ry4 += 0.5; updateV4(); }, 16);
+        };
+        window.showFrontV4 = function() { stopAuto4(); rx4=0; ry4=0; box4.style.transition='transform 0.6s ease'; updateV4(); };
+        window.showBackV4 = function() { stopAuto4(); rx4=0; ry4=180; box4.style.transition='transform 0.6s ease'; updateV4(); };
+        window.showSideV4 = function() { stopAuto4(); rx4=0; ry4=-90; box4.style.transition='transform 0.6s ease'; updateV4(); };
+    }
+
     // ==================== SMOOTH SCROLL ==================== //
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
