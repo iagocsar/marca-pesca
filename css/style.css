@@ -234,44 +234,10 @@ body {
 }
 
 .hero-japan-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
-    padding: 8px 20px;
-    border: 1px solid var(--orange);
-    border-radius: 6px;
-    background: rgba(255, 107, 0, 0.04);
     animation: fadeInUp 1s ease 0.5s both;
-}
-
-.hero-japan-flags {
-    display: flex;
-    gap: 4px;
-    font-size: 22px;
-}
-
-.hero-japan-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.hero-japan-sm {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 9px;
-    color: var(--gray-light);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.hero-japan-bold {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--orange);
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .hero-specs {
