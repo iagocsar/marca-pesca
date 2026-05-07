@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Embalagem NATIVA VERTICE - MINNOW RAPTOR Ref.15</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- CSS do site — garante fidelidade total ao mockup V5 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Esconde TUDO do site original */
+        html { scroll-behavior: auto !important; }
+        body { background: #bbb !important; overflow: visible !important; }
+        .nav, nav, .section, section, .hero, body > footer, .container,
+        .mockup-scene, .mockup-controls, .stickerv2-grid, .stickerv2-card,
+        .section-header, .section-badge, .section-title, .section-subtitle,
+        .v5-mockup-area, .mockup-btn { display: none !important; }
+        /* Garante que o footer DENTRO da caixa apareca */
+        .v5-back-footer { display: flex !important; }
+
+        /* Override: remove 3D e position absolute */
+        .v5-front, .v5-back, .v5-left, .v5-right, .v5-top, .v5-bottom {
+            transform: none !important;
+            position: relative !important;
+        }
+        /* Garante que NADA corte o conteudo do verso */
+        .v5-back {
+            overflow: visible !important;
+            height: auto !important;
+            min-height: 540px;
+        }
+        .v5-back-content {
+            height: auto !important;
+        }
+        .sp-fb, .sc, .fw, .pg {
+            overflow: visible !important;
+        }
+        .sp-fb { height: auto; min-height: 193mm; }
+
+        @media print {
+            body { background: white !important; }
+            .pg { box-shadow: none !important; margin: 0 !important; }
+            .pg-label { display: none !important; }
+        }
+
+        @page { size: A3 landscape; margin: 8mm; }
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+
+        /* Pagina A3 landscape */
+        .pg {
+            width: 410mm; height: 280mm;
+            background: white;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15mm;
+            page-break-after: always;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+            position: relative;
+            overflow: visible;
+        }
+
+        .pg-label {
+            position: absolute; top: 3mm; left: 5mm;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 8px; color: #aaa; letter-spacing: 1px;
+        }
+
+        /* Wrapper que escala cada face e reserva espaco */
+        .fw {
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .fw-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 8px; color: #999; letter-spacing: 1px;
+            margin-top: 3mm; text-align: center;
+        }
+
+        /* Scale containers — transform-origin top center */
+        .sc { transform: scale(1.35); transform-origin: top center; }
+
+        /* Espacos reservados para conteudo escalado (tamanho real × 1.35) */
+        .sp-fb { width: 71mm; height: 193mm; } /* front/back: 200×540 × 1.35 */
+        .sp-s  { width: 35mm; height: 193mm; } /* sides: 98×540 × 1.35 */
+        .sp-tb { width: 71mm; height: 35mm; }  /* top/bottom: 200×98 × 1.35 */
+        .sp-st { width: 115mm; height: 50mm; } /* sticker standalone: 320px × ~120px × 1.35 */
+
+        /* Pagina 2: flex-wrap para organizar as peças menores */
+        .pg--wrap {
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 10mm;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= PAGINA 1: FRENTE + VERSO ================= -->
+    <div class="pg">
+        <div class="pg-label">NATIVA V&Eacute;RTICE &mdash; MINNOW RAPTOR Ref.15 &mdash; Frente + Verso &mdash; 62&times;109mm</div>
+
+        <!-- FRENTE -->
+        <div class="fw">
+            <div class="sp-fb"><div class="sc">
+                <div class="v5-front">
+                    <div class="v5-card">
+                        <div class="v5-top-badge"><span class="v5-series">PRO SERIES</span></div>
+                        <div class="v5-brand-hero"><span class="v5-brand-hero-d">NATIVA</span><span class="v5-brand-hero-n">VERTICE</span></div>
+                        <div class="v5-card-japan">
+                            <div class="v5-card-japan-top">
+                                <svg viewBox="0 0 90 63" xmlns="http://www.w3.org/2000/svg" class="v5-card-flag-rect"><path d="M0 8 Q20 3 45 6 Q70 9 90 6 L90 57 Q70 60 45 57 Q20 54 0 57 Z" fill="#009739"/><polygon points="45,12 78,31.5 45,51 12,31.5" fill="#FEDD00"/><circle cx="45" cy="31.5" r="11" fill="#002776"/><path d="M34 31.5 Q40 28 45 30 Q50 28 56 31.5" stroke="#FFF" stroke-width="1" fill="none"/></svg>
+                                <svg viewBox="0 0 90 63" xmlns="http://www.w3.org/2000/svg" class="v5-card-flag-rect"><path d="M0 8 Q20 3 45 6 Q70 9 90 6 L90 57 Q70 60 45 57 Q20 54 0 57 Z" fill="#FFFFFF"/><circle cx="45" cy="31.5" r="13" fill="#BC002D"/></svg>
+                            </div>
+                            <div class="v5-card-japan-bottom"><span class="v5-card-japan-sm">INSPIRED BY</span><strong class="v5-card-japan-lg">JAPANESE</strong><strong class="v5-card-japan-lg">DESIGN</strong></div>
+                        </div>
+                    </div>
+                    <div class="v5-pvc">
+                        <div class="v5-pvc-shine"></div>
+                        <div class="v5-lure"><svg viewBox="0 0 40 160" class="v5-lure-svg"><defs><linearGradient id="v5LureGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FF6B00"/><stop offset="50%" stop-color="#FF8C33"/><stop offset="100%" stop-color="#FF6B00"/></linearGradient></defs><ellipse cx="20" cy="80" rx="10" ry="50" fill="url(#v5LureGrad)"/><circle cx="20" cy="36" r="4" fill="#FFF"/><circle cx="19.5" cy="35.5" r="2.2" fill="#0A0A0A"/><path d="M20 130 L14 148 L20 140 L26 148 Z" fill="#FF6B00" opacity="0.7"/></svg></div>
+                        <!-- sem etiqueta -->
+                    </div>
+                </div>
+            </div></div>
+            <div class="fw-label">FRENTE (62&times;109mm)</div>
+        </div>
+
+        <!-- VERSO -->
+        <div class="fw">
+            <div class="sp-fb"><div class="sc">
+                <div class="v5-back">
+                    <div class="v5-back-content">
+                        <header class="v5-back-header">
+                            <div class="v5-back-logo"><span class="v5-back-logo-d">NATIVA</span><span class="v5-back-logo-n">VERTICE</span></div>
+                            <div class="v5-back-divider"></div>
+                            <div class="v5-back-hero"><span class="v5-back-hero-main">PRECIS&Atilde;O EM CADA LANCE</span><span class="v5-back-hero-sub">Performance forjada em cada detalhe</span></div>
+                        </header>
+                        <div class="v5-back-features">
+                            <div class="v5-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="3"/><path d="M7 14V8"/><path d="M10 8h8"/><path d="M15 5l3 3-3 3"/></svg><div class="v5-feature-text"><span class="v5-feature-name">Transfer&ecirc;ncia de Peso</span><span class="v5-feature-desc">Bolas de a&ccedil;o embutidas</span></div></div>
+                            <div class="v5-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"><path d="M2 6c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/><line x1="5" y1="12" x2="19" y2="12"/><path d="M2 18c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/></svg><div class="v5-feature-text"><span class="v5-feature-name">Suspending</span><span class="v5-feature-desc">Pausa na meia-&aacute;gua</span></div></div>
+                            <div class="v5-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 12 22 2 8.5"/></svg><div class="v5-feature-text"><span class="v5-feature-name">Pintura Hologr&aacute;fica</span><span class="v5-feature-desc">Revestimento a laser</span></div></div>
+                            <div class="v5-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><circle cx="12" cy="4" r="2"/><path d="M12 6v4c0 4-7 6-7 10a7 7 0 0 0 7 7"/></svg><div class="v5-feature-text"><span class="v5-feature-name">Anz&oacute;is Premium</span><span class="v5-feature-desc">Teflon anti-ferrugem</span></div></div>
+                        </div>
+                        <div class="v5-benefits-strip">
+                            <div class="v5-benefits-title">PONTOS POSITIVOS</div>
+                            <div class="v5-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg><div class="v5-benefit-text"><span class="v5-benefit-label">Arremesso Longo</span><span class="v5-benefit-desc">Bolas de a&ccedil;o embutidas &mdash; ondas sonoras eficientes para atrair peixes</span></div></div>
+                            <div class="v5-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2 0 3-2 6-2s3 2 6 2 3-2 6-2"/><path d="M3 18c2 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg><div class="v5-benefit-text"><span class="v5-benefit-label">A&ccedil;&atilde;o Natural</span><span class="v5-benefit-desc">Movimento err&aacute;tico e real&iacute;stico na &aacute;gua</span></div></div>
+                            <div class="v5-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg><div class="v5-benefit-text"><span class="v5-benefit-label">Alta Durabilidade</span><span class="v5-benefit-desc">Corpo em ABS refor&ccedil;ado (material novo) resistente a impactos</span></div></div>
+                            <div class="v5-benefit"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7H22l-6 4.5L18 21l-6-4.5L6 21l2-7.5L2 9h7.5z"/></svg><div class="v5-benefit-text"><span class="v5-benefit-label">Atrativo Visual</span><span class="v5-benefit-desc">Revestimento a laser &mdash; pintura 3D hologr&aacute;fica brilhante</span></div></div>
+                        </div>
+                        <div class="v5-species"><div class="v5-species-header"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-4 7-6 11-6 4 0 7 2 7 6s-3 6-7 6c-4 0-8-2-11-6z"/><path d="M19 12c0 .5-.3 1-.8 1"/><path d="M3 12l-2-2m0 4l2-2"/></svg><span class="v5-species-label">INDICADA PARA</span></div><span class="v5-species-list">Tucunar&eacute; &middot; Robalo &middot; Tra&iacute;ra &middot; Dourado &middot; Black Bass</span></div>
+                        <div class="v5-legal-block">
+                            <p class="v5-legal-row"><span class="v5-legal-label">COMPOSI&Ccedil;&Atilde;O</span><span class="v5-legal-value">Corpo em ABS refor&ccedil;ado &middot; Anz&oacute;is em a&ccedil;o carbono c/ revestimento Teflon &mdash; gancho de 3 pontas afiado e dur&aacute;vel &middot; Anilhas em a&ccedil;o inox</span></p>
+                            <p class="v5-legal-row"><span class="v5-legal-label">ADVERT&Ecirc;NCIA</span><span class="v5-legal-value">Cont&eacute;m anz&oacute;is pontiagudos. Mantenha fora do alcance de crian&ccedil;as.</span></p>
+                        </div>
+                        <footer class="v5-back-footer">
+                            <div class="v5-footer-main">
+                                <div class="v5-mfg-info">
+                                    <p class="v5-mfg-line"><strong>Fabricado por</strong> Nativa Vertice Ind. e Com. Ltda.</p>
+                                    <p class="v5-mfg-line">CNPJ 00.000.000/0001-00 &middot; Av. Exemplo, 1234 &middot; Cidade/UF</p>
+                                    <p class="v5-mfg-line"><strong>SAC</strong> sac@nativavertice.com.br</p>
+                                    <p class="v5-mfg-line v5-mfg-meta"><strong>C&Oacute;D.</strong> NV-PRO-15 &middot; <strong>LOTE</strong> 2026-01</p>
+                                </div>
+                                <div class="v5-mfg-side">
+                                    <div class="v5-back-japan-badge"><div class="v5-japan-flags"><svg viewBox="0 0 90 63" xmlns="http://www.w3.org/2000/svg" class="v5-flag-svg"><rect width="90" height="63" fill="#009739"/><polygon points="45,8 82,31.5 45,55 8,31.5" fill="#FEDD00"/><circle cx="45" cy="31.5" r="10" fill="#002776"/><path d="M36 31.5 Q42 28 45 30 Q48 28 54 31.5" stroke="#FFF" stroke-width="1" fill="none"/></svg><svg viewBox="0 0 90 63" xmlns="http://www.w3.org/2000/svg" class="v5-flag-svg"><rect width="90" height="63" fill="#FFFFFF"/><circle cx="45" cy="31.5" r="14" fill="#BC002D"/></svg></div><div class="v5-japan-text"><span class="v5-japan-sm">INSPIRED BY</span><span class="v5-japan-lg">JAPANESE DESIGN</span></div></div>
+                                    <div class="v5-barcode-placeholder"><div class="v5-barcode-logo"><span class="v5-barcode-logo-d">NATIVA</span><span class="v5-barcode-logo-n">VERTICE</span></div></div>
+                                </div>
+                            </div>
+                            <div class="v5-footer-row">
+                                <div class="v5-back-social">
+                                    <div class="v5-back-social-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#FF6B00" stroke="none"/></svg><span>@nativavertice</span></div>
+                                    <div class="v5-back-social-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>nativavertice.com.br</span></div>
+                                </div>
+                                <div class="v5-recycle-group"><div class="v5-recycle-symbol"><svg width="10" height="10" viewBox="0 0 32 32"><path d="M16 5 L27 25 L5 25 Z" fill="none" stroke="#B0B0B0" stroke-width="2" stroke-linejoin="round"/><text x="16" y="22" text-anchor="middle" fill="#B0B0B0" font-family="Orbitron" font-size="9" font-weight="700">21</text></svg></div><div class="v5-recycle-symbol"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></div></div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div></div>
+            <div class="fw-label">VERSO (62&times;109mm)</div>
+        </div>
+    </div>
+
+    <!-- ================= PAGINA 2: LATERAIS + TOPO + BASE + ETIQUETA ================= -->
+    <div class="pg pg--wrap">
+        <div class="pg-label">NATIVA V&Eacute;RTICE &mdash; Laterais, Topo, Base e Etiqueta</div>
+
+        <div class="fw"><div class="sp-s"><div class="sc">
+            <div class="v5-left"><div class="v5-side"><div class="v5-side-spine"><span class="v5-side-spine-d">NATIVA</span><span class="v5-side-spine-n">VERTICE</span></div><div class="v5-side-line"></div><span class="v5-side-tag">PRO SERIES</span></div></div>
+        </div></div><div class="fw-label">LAT. ESQ. (24&times;109mm)</div></div>
+
+        <div class="fw"><div class="sp-s"><div class="sc">
+            <div class="v5-right"><div class="v5-side v5-side--right"><span class="v5-side-tag">PRO SERIES</span><div class="v5-side-line"></div><span class="v5-side-tech">TECNOLOGIA DE PONTA</span></div></div>
+        </div></div><div class="fw-label">LAT. DIR. (24&times;109mm)</div></div>
+
+        <div class="fw"><div class="sp-tb"><div class="sc">
+            <div class="v5-top"><div class="v5-topbottom"><span class="v5-topbottom-d">NATIVA</span><span class="v5-topbottom-n">VERTICE</span></div></div>
+        </div></div><div class="fw-label">TOPO (62&times;24mm)</div></div>
+
+        <div class="fw"><div class="sp-tb"><div class="sc">
+            <div class="v5-bottom"><div class="v5-topbottom"><span class="v5-topbottom-d">NATIVA</span><span class="v5-topbottom-n">VERTICE</span></div></div>
+        </div></div><div class="fw-label">BASE (62&times;24mm)</div></div>
+
+        <div class="fw"><div class="sp-st"><div class="sc">
+            <div class="stickerv2-h stickerv2-h--standalone">
+                <div class="stickerv2-h-top">MINNOW</div>
+                <div class="stickerv2-h-body"><div class="stickerv2-h-left"><span class="stickerv2-h-brand">NATIVA</span><span class="stickerv2-h-brand-n">VERTICE</span></div><div class="stickerv2-h-divider"></div><div class="stickerv2-h-right"><span class="stickerv2-h-title">RAPTOR</span><span class="stickerv2-h-sub">100mm &middot; 7.7g</span></div></div>
+                <div class="stickerv2-h-bottom">PRO SERIES</div>
+            </div>
+        </div></div><div class="fw-label">ETIQUETA &mdash; Ref.15 MINNOW RAPTOR</div></div>
+    </div>
+
+</body>
+</html>

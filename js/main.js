@@ -146,57 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTransform();
     };
 
-    // ==================== LIVE UPDATE ==================== //
-    function updateMockupData() {
-        var model = document.getElementById('v3Model').value.toUpperCase() || 'PHANTOM';
-        var type = document.getElementById('v3Type').value.toUpperCase() || 'JERKBAIT';
-        var series = document.getElementById('v3Series').value.toUpperCase() || 'PRO SERIES';
-        var size = document.getElementById('v3Size').value || '120';
-        var weight = document.getElementById('v3Weight').value || '18';
-        var depth = document.getElementById('v3Depth').value || '1.5-1.8';
-        var hooks = document.getElementById('v3Hooks').value || '#6 x3';
-        var water = document.getElementById('v3Water').value;
-        var code = document.getElementById('v3Code').value.toUpperCase() || '120SP';
-        var fullModel = model + ' ' + code;
-        var maxDepth = depth.indexOf('-') !== -1 ? depth.split('-').pop() : depth;
-
-        // Front card
-        document.getElementById('v3FrontSeries').textContent = series;
-        document.getElementById('v3FrontModel').textContent = model;
-        document.getElementById('v3FrontType').textContent = type;
-        document.getElementById('v3FrontWater').textContent = water;
-        document.getElementById('v3FrontSpecs').textContent = size + 'mm | ' + weight + 'g';
-        document.getElementById('v3FrontDepth').textContent = depth + 'm';
-
-        // Front PVC info
-        document.getElementById('v3FrontInfoModel').textContent = fullModel;
-        document.getElementById('v3FrontInfoCategory').textContent = type;
-        document.getElementById('v3FrontInfoSpecs').textContent = size + 'mm / ' + weight + 'g / ' + maxDepth + 'm';
-
-        // Back
-        document.getElementById('v3BackModel').textContent = fullModel;
-        document.getElementById('v3BackSize').textContent = size + 'mm';
-        document.getElementById('v3BackWeight').textContent = weight + 'g';
-        document.getElementById('v3BackDepth').textContent = depth + 'm';
-        document.getElementById('v3BackWater').textContent = water === 'MEIA AGUA' ? 'Meia Agua' : water === 'SUPERFICIE' ? 'Superficie' : 'Fundo';
-        document.getElementById('v3BackHooks').textContent = hooks;
-
-        // Sides
-        document.getElementById('v3LeftSize').textContent = size + 'mm';
-        document.getElementById('v3LeftWeight').textContent = weight + 'g';
-        document.getElementById('v3LeftDepth').textContent = maxDepth + 'm';
-        document.getElementById('v3RightModel').textContent = model;
-        document.getElementById('v3RightType').textContent = type;
-        document.getElementById('v3RightSize').textContent = size + 'mm';
-        document.getElementById('v3RightWeight').textContent = weight + 'g';
-        document.getElementById('v3RightWater').textContent = water;
-    }
-
-    document.querySelectorAll('#embalagem .v3-input').forEach(function(input) {
-        input.addEventListener('input', updateMockupData);
-        input.addEventListener('change', updateMockupData);
-    });
-
     // ==================== V4 MOCKUP 3D ==================== //
     var scene4 = document.getElementById('v4Scene');
     var box4 = document.getElementById('v4Box');
@@ -251,6 +200,62 @@ document.addEventListener('DOMContentLoaded', () => {
         window.showFrontV4 = function() { stopAuto4(); rx4=0; ry4=0; box4.style.transition='transform 0.6s ease'; updateV4(); };
         window.showBackV4 = function() { stopAuto4(); rx4=0; ry4=180; box4.style.transition='transform 0.6s ease'; updateV4(); };
         window.showSideV4 = function() { stopAuto4(); rx4=0; ry4=-90; box4.style.transition='transform 0.6s ease'; updateV4(); };
+    }
+
+    // ==================== V5 MOCKUP 3D ==================== //
+    var scene5 = document.getElementById('v5Scene');
+    var box5 = document.getElementById('v5Box');
+
+    if (scene5 && box5) {
+        var isDrag5 = false, sx5, sy5;
+        var rx5 = 5, ry5 = -25, auto5 = null;
+
+        function updateV5() {
+            box5.style.transform = 'translateZ(-49px) rotateY(' + ry5 + 'deg) rotateX(' + rx5 + 'deg)';
+        }
+        function stopAuto5() { if (auto5) { clearInterval(auto5); auto5 = null; } }
+
+        scene5.addEventListener('mousedown', function(e) {
+            isDrag5 = true; sx5 = e.clientX; sy5 = e.clientY;
+            stopAuto5(); box5.style.transition = 'none';
+        });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDrag5) return;
+            ry5 += (e.clientX - sx5) * 0.5;
+            rx5 -= (e.clientY - sy5) * 0.3;
+            rx5 = Math.max(-30, Math.min(30, rx5));
+            sx5 = e.clientX; sy5 = e.clientY;
+            updateV5();
+        });
+        document.addEventListener('mouseup', function() {
+            if (isDrag5) { isDrag5 = false; box5.style.transition = 'transform 0.3s ease'; }
+        });
+
+        scene5.addEventListener('touchstart', function(e) {
+            isDrag5 = true; sx5 = e.touches[0].clientX; sy5 = e.touches[0].clientY;
+            stopAuto5(); box5.style.transition = 'none';
+        }, { passive: true });
+        document.addEventListener('touchmove', function(e) {
+            if (!isDrag5) return;
+            ry5 += (e.touches[0].clientX - sx5) * 0.5;
+            rx5 -= (e.touches[0].clientY - sy5) * 0.3;
+            rx5 = Math.max(-30, Math.min(30, rx5));
+            sx5 = e.touches[0].clientX; sy5 = e.touches[0].clientY;
+            updateV5();
+        }, { passive: true });
+        document.addEventListener('touchend', function() {
+            if (isDrag5) { isDrag5 = false; box5.style.transition = 'transform 0.3s ease'; }
+        });
+
+        window.resetV5 = function() { stopAuto5(); rx5=5; ry5=-25; box5.style.transition='transform 0.6s ease'; updateV5(); };
+        window.autoRotateV5 = function() {
+            if (auto5) { stopAuto5(); return; }
+            box5.style.transition = 'none';
+            auto5 = setInterval(function() { ry5 += 0.5; updateV5(); }, 16);
+        };
+        window.showFrontV5 = function() { stopAuto5(); rx5=0; ry5=0; box5.style.transition='transform 0.6s ease'; updateV5(); };
+        window.showBackV5 = function() { stopAuto5(); rx5=0; ry5=180; box5.style.transition='transform 0.6s ease'; updateV5(); };
+        window.showSideV5 = function() { stopAuto5(); rx5=0; ry5=-90; box5.style.transition='transform 0.6s ease'; updateV5(); };
     }
 
     // ==================== SMOOTH SCROLL ==================== //
